@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>CodeTrack — Homepage</title>
+  </head>
+  <body>
+    <header>
+      <!-- el 1 -->
+      <div class="logo">
+        <span class="logo-mark" aria-hidden="true"
+          ><img
+            src="./images/codetrackfavicon.svg"
+            alt="Codetrack Official Logo"
+        /></span>
+        <span class="logo-text"
+          >Code<span class="logo-accent">Track</span></span
+        >
+      </div>
+      <!-- el 2 -->
+      <nav aria-label="Primary">
+        <a class="special"> <span id="xxspecial">Fea</span>tures </a>
+        <a href="#how-it-works" class="codetrack">How it works</a>
+      </nav>
+      <!-- el 3 -->
+      <div class="header-actions">
+        <button class="btn btn-ghost">Log in</button>
+        <button class="btn btn-primary">Get started</button>
+      </div>
+
+      <!-- el - 4 (menu icon) -->
+      <div class="menu_icon">
+        <i class="bx bx-menu"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero_left">
+          <div class="hero-badge">
+            <p>🔥 Build your coding habit</p>
+          </div>
+          <h1>Build the habit. Watch the streak grow.</h1>
+          <p class="hero-subtitle">
+            CodeTrack helps you log what you learn every day, hit your goals,
+            and actually see your progress — one green square at a time.
+          </p>
+          <div class="hero-ctas">
+            <a href="#get-started" class="btn btn-primary"
+              >Start tracking — it's free →</a
+            >
+            <a href="#how-it-works" class="btn btn-outline"
+              >▷ See how it works</a
+            >
+          </div>
+        </div>
+
+        <div class="hero_right">
+          <div class="activity-card">
+            <div class="activity-card-header">
+              <p>Your activity</p>
+              <p class="streak-pill">🔥 12-day streak</p>
+            </div>
+
+            <img
+              class="activity-image"
+              src="./images/heroleftimage.png"
+              alt="Activity heatmap from December through June with a Less-to-More legend, and two recent log entries: a React useFetch hook (45 min) and LeetCode two-pointer algorithms (30 min)"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="CodeTrack community stats">
+        <div class="stats-copy">
+          <div class="stats-avatars" aria-hidden="true">
+            <span class="stats-avatar stats-avatar--amber">MC</span>
+            <span class="stats-avatar stats-avatar--slate">SC</span>
+            <span class="stats-avatar stats-avatar--mint">JI</span>
+            <span class="stats-avatar stats-avatar--cloud">PT</span>
+            <span class="stats-avatar stats-avatar--green">TB</span>
+          </div>
+          <p class="stats-copy-text">
+            Loved by bootcamp students and self-taught devs
+          </p>
+        </div>
+        <p class="stats-metric">
+          <span class="stats-metric-value">50,000+</span>
+          <span class="stats-metric-label">days logged</span>
+        </p>
+      </section>
+
+      <section id="features" class="features" aria-labelledby="features-title">
+        <div class="features-intro">
+          <h2 id="features-title">Everything you need to keep showing up</h2>
+          <p>Small, honest tools for a daily practice that sticks.</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M14.5 5H18a1 1 0 0 1 1 1v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h6"
+                />
+                <path d="M13 11 19 5" />
+                <path d="M15 5h4v4" />
+              </svg>
+            </div>
+            <div class="feature-copy">
+              <h3>Daily logging, 20 seconds flat</h3>
+              <p>Jot what you worked on, how long, and the topic. Done.</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 4.5c.4 1.9 1.63 3.13 3.5 4 .97.45 2 1.67 2 3.75A5.5 5.5 0 1 1 7 10.5c.46 0 .9.06 1.32.18"
+                />
+                <path
+                  d="M12 4.5c-1.33 1.04-2 2.25-2 3.64 0 1.25.69 2.22 2.07 2.92"
+                />
+              </svg>
+            </div>
+            <div class="feature-copy">
+              <h3>Streaks that keep you honest</h3>
+              <p>Don't break the chain. Your streak is front and centre.</p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="7.5" />
+                <circle cx="12" cy="12" r="4.5" />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="1.5"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </div>
+            <div class="feature-copy">
+              <h3>Goals with real progress</h3>
+              <p>
+                Set a skill to learn; watch the bar fill as you log toward it.
+              </p>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M5 15.5 10 10.5l3.2 3.2L19 8" />
+                <path d="M14 8h5v5" />
+              </svg>
+            </div>
+            <div class="feature-copy">
+              <h3>Your journey, visualised</h3>
+              <p>A heatmap and charts that show how far you've come.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="how-it-works">
+        <h2>How it works</h2>
+
+        <div>
+          <div>
+            <span>01</span>
+            <h3>Log today</h3>
+            <p>Add what you learned — topic, time, a quick note.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>Build your streak</h3>
+            <p>Show up tomorrow. And the next day. Watch it climb.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>Hit your goals</h3>
+            <p>Every entry pushes your goals' progress bars forward.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <blockquote>
+          &ldquo;I went from coding once a week to a 40-day streak. Watching the
+          squares fill up is weirdly addictive.&rdquo;
+        </blockquote>
+        <div>
+          <span>M</span>
+          <span>Maya <span>· self-taught dev</span></span>
+        </div>
+      </section>
+
+      <section id="get-started">
+        <div>
+          <!-- decorative heatmap -->
+        </div>
+        <h2>Your streak starts today.</h2>
+        <p>Log your first day in 20 seconds. It's free.</p>
+        <a href="#signup">Get started free →</a>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <div>
+          <p>CodeTrack</p>
+          <p>Build the habit. Watch the streak grow.</p>
+        </div>
+
+        <div>
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#changelog">Changelog</a>
+        </div>
+
+        <div>
+          <h4>Resources</h4>
+          <a href="#guides">Guides</a>
+          <a href="#blog">Blog</a>
+          <a href="#community">Community</a>
+          <a href="#help">Help centre</a>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#careers">Careers</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div>
+          <h4>Legal</h4>
+          <a href="#terms">Terms</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#cookies">Cookies</a>
+        </div>
+      </div>
+
+      <div>
+        <p>&copy; 2026 CodeTrack. All rights reserved.</p>
+        <p>Made for people learning to code.</p>
+      </div>
+    </footer>
+  </body>
+</html>
