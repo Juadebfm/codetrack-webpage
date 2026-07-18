@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
 
     <link rel="stylesheet" href="./style.css" />
     <link
@@ -174,25 +175,38 @@
         </div>
       </section>
 
-      <section id="how-it-works">
-        <h2>How it works</h2>
+      <section
+        id="how-it-works"
+        class="how-it-works"
+        aria-labelledby="how-it-works-title"
+      >
+        <h2 id="how-it-works-title">How it works</h2>
 
-        <div>
-          <div>
-            <span>01</span>
+        <div class="steps-grid">
+          <article class="step-card">
+            <span class="step-number">01</span>
             <h3>Log today</h3>
-            <p>Add what you learned — topic, time, a quick note.</p>
-          </div>
-          <div>
-            <span>02</span>
+            <p>
+              Add what you learned — topic, time, <br />
+              a quick note.
+            </p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">02</span>
             <h3>Build your streak</h3>
-            <p>Show up tomorrow. And the next day. Watch it climb.</p>
-          </div>
-          <div>
-            <span>03</span>
+            <p>
+              Show up tomorrow. And the next day. <br />
+              Watch it climb.
+            </p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">03</span>
             <h3>Hit your goals</h3>
-            <p>Every entry pushes your goals' progress bars forward.</p>
-          </div>
+            <p>
+              Every entry pushes your goals' progress <br />
+              bars forward.
+            </p>
+          </article>
         </div>
       </section>
 
