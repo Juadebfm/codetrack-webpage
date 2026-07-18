@@ -1,4 +1,4 @@
-# CodeTrack
+# CodeTrack - Julius Gabriel Adebowale
 
 CodeTrack is a static landing page project for a coding habit tracker product. The current build focuses on a clean marketing homepage with a strong design system, responsive layout work, and polished feature-card interactions.
 
