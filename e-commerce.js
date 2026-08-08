@@ -117,90 +117,9 @@ users.push(
   },
 );
 
-const currentUser = users[1];
+const currentUser = users[2];
 
-const products = [
-  {
-    id: 1,
-    name: "Laptop",
-    category: "computers",
-    price: 850_000,
-    stock: 12,
-    active: true,
-  },
-  {
-    id: 2,
-    name: "Smartphone",
-    category: "electronics",
-    price: 450_000,
-    stock: 25,
-    active: true,
-  },
-  {
-    id: 3,
-    name: "Wireless Headphones",
-    category: "accessories",
-    price: 120_000,
-    stock: 40,
-    active: true,
-  },
-  {
-    id: 4,
-    name: "Office Chair",
-    category: "furniture",
-    price: 200_000,
-    stock: 8,
-    active: true,
-  },
-  {
-    id: 5,
-    name: "Gaming Console",
-    category: "gaming",
-    price: 600_000,
-    stock: 15,
-    active: true,
-  },
-  {
-    id: 6,
-    name: "Bluetooth Speaker",
-    category: "electronics",
-    price: 95_000,
-    stock: 30,
-    active: true,
-  },
-  {
-    id: 7,
-    name: "Smart Watch",
-    category: "wearables",
-    price: 180_000,
-    stock: 20,
-    active: true,
-  },
-  {
-    id: 8,
-    name: "External Hard Drive",
-    category: "computers",
-    price: 75_000,
-    stock: 18,
-    active: true,
-  },
-  {
-    id: 9,
-    name: "Tablet",
-    category: "electronics",
-    price: 320_000,
-    stock: 10,
-    active: false,
-  },
-  {
-    id: 10,
-    name: "Mechanical Keyboard",
-    category: "accessories",
-    price: 65_000,
-    stock: 22,
-    active: true,
-  },
-];
+
 
 // Real life use case of if/else statements
 // Dashboard with users (access) and products values
@@ -215,36 +134,36 @@ const products = [
 //   },
 
 // Conditional - truthy / falsey - if/else
-if (!currentUser.emailVerified) {
-  console.log("Verify Your email");
-} else if (currentUser.accountStatus !== "active") {
-  console.log("Account cannot access this dashboard");
-} else if (currentUser.role === "admin" || currentUser.role === "manager") {
-  console.log("Access Granted");
-} else {
-  console.log("User Access Denied");
-}
+// if (!currentUser.emailVerified) {
+//   console.log("Verify Your email");
+// } else if (currentUser.accountStatus !== "active") {
+//   console.log("Account cannot access this dashboard");
+// } else if (currentUser.role === "admin" || currentUser.role === "manager") {
+//   console.log("Access Granted");
+// } else {
+//   console.log("User Access Denied");
+// }
 
 // Switch
-if (!currentUser.emailVerified) {
-  console.log("Verify Your email");
-} else if (currentUser.accountStatus !== "active") {
-  console.log("Account cannot access this dashboard");
-} else {
-  switch (currentUser.role) {
-    case "admin":
-      console.log("Open admin dahsboard");
-      break;
-    case "manager":
-      console.log("Open manager dahsboard");
-      break;
-    case "user":
-      console.log("Open normal customer dahsboard");
-      break;
-    default:
-      console.log("Role Not Recognized");
-  }
-}
+// if (!currentUser.emailVerified) {
+//   console.log("Verify Your email");
+// } else if (currentUser.accountStatus !== "active") {
+//   console.log("Account cannot access this dashboard");
+// } else {
+//   switch (currentUser.role) {
+//     case "admin":
+//       console.log("Open admin dahsboard");
+//       break;
+//     case "manager":
+//       console.log("Open manager dahsboard");
+//       break;
+//     case "user":
+//       console.log("Open normal customer dahsboard");
+//       break;
+//     default:
+//       console.log("Role Not Recognized");
+//   }
+// }
 
 //   {
 //     id: "user_002",
@@ -272,21 +191,6 @@ if (!currentUser.emailVerified) {
 //     accountStatus: "active",
 //   },
 
-function canAccessDashboard(user) {
-  // user.emailVerified === false
-  if (!user.emailVerified) {
-    return false;
-  }
-
-  if (user.accountStatus !== "active") {
-    return false;
-  }
-
-  return user.role === "admin" || user.role === "manager";
-}
-const adaCanAccess = canAccessDashboard(users[1]); // false
-const juadCanAccess = canAccessDashboard(users[0]);
-
 //  {
 //     id: "user_010",
 //     name: "Samuel Olatunji",
@@ -295,6 +199,39 @@ const juadCanAccess = canAccessDashboard(users[0]);
 //     accountStatus: "suspended",
 //   },
 
-const lastCanAccess = canAccessDashboard(users[11]);
-console.log(lastCanAccess);
-console.log("function response:", adaCanAccess, juadCanAccess);
+// Build a readble access message
+// Instead of if else statement we have another way of writing conditionals (not switch) called "ternary operators"
+
+//  {
+//     id: "user_010",
+//     name: "Samuel Olatunji",
+//     role: "user",
+//     emailVerified: true,
+//     accountStatus: "suspended",
+//   },
+
+// function canAccessDashboard(user) {
+//   // user.emailVerified === false
+//   if (!user.emailVerified) {
+//     return false;
+//   }
+
+//   if (user.accountStatus !== "active") {
+//     return false;
+//   }
+
+//   return user.role === "admin" || user.role === "manager";
+// }
+
+// const accessResult = canAccessDashboard(currentUser)
+//   ? "Access Granted"
+//   : "Access Denied";
+
+// Ternary Operator - conditional statments
+
+// const accessMessage = `${currentUser.name}: ${accessResult}`;
+
+// console.log(accessMessage);
+
+
+
