@@ -48,13 +48,13 @@
           <div class="hero-badge">
             <p>🔥 Build your coding habit</p>
           </div>
-          <h1>Build the habit. Watch the streak grow.</h1>
+          <h1 id="mainTitle">Build the habit. Watch the streak grow.</h1>
           <p class="hero-subtitle">
             CodeTrack helps you log what you learn every day, hit your goals,
             and actually see your progress — one green square at a time.
           </p>
           <div class="hero-ctas">
-            <a href="#get-started" class="btn btn-primary"
+            <a href="#get-started" class="btn btn-primary" id="hero_pri"
               >Start tracking — it's free →</a
             >
             <a href="#how-it-works" class="btn btn-outline"
@@ -71,6 +71,7 @@
             </div>
 
             <img
+            id="heroImg"
               class="activity-image"
               src="./images/heroleftimage.png"
               alt="Activity heatmap from December through June with a Less-to-More legend, and two recent log entries: a React useFetch hook (45 min) and LeetCode two-pointer algorithms (30 min)"
@@ -387,5 +388,7 @@
         <p>Made for people learning to code.</p>
       </div>
     </footer>
+
+    <script src="./app.js"></script>
   </body>
 </html>
