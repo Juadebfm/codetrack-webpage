@@ -129,10 +129,10 @@ products.push(newProduct);
 // });
 
 // Find (locate 1 particular value)
-// const selectedProductId = 4;
+const selectedProductId = 4;
 
-// const selectedProduct = products.find((product) => {
-//   return product.id === selectedProductId;
-// });
+const selectedProduct = products.find((product) => {
+  return product.id === selectedProductId;
+});
 
-// console.log(selectedProduct);
+console.log(selectedProduct);
