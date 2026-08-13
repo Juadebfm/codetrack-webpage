@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Login Section -->
+    <section id="loginSection">
+      <h1>Login</h1>
+
+      <form id="loginForm">
+        <!-- Username -->
+        <div>
+          <input
+            id="usernameInput"
+            type="text"
+            name="username"
+            placeholder="Enter Username"
+          />
+
+          <p id="usernameError"></p>
+        </div>
+        <div>
+          <input
+            id="passwordInput"
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+          />
+
+          <p id="passwordError"></p>
+        </div>
+
+        <button id="loginButton">Login</button>
+      </form>
+
+      <p id="loginStatus">----</p>
+    </section>
+    <!-- Dashboard Section -->
+    <section id="dashboard" hidden>
+      <div id="profile"></div>
+      <hr />
+      <h2>Products</h2>
+      <!-- Search Bar -->
+      <form id="searchForm">
+        <input
+          type="search"
+          name="search"
+          id="searchInput"
+          placeholder="Search Products..."
+        />
+        <button type="submit">search</button>
+      </form>
+
+      <p id="productStatus">----</p>
+
+      <div id="products"></div>
+
+      <h2>Add products</h2>
+
+      <form id="productForm">
+        <input id="productTitle" type="text" placeholder="Enter Product Name" />
+        <input
+          id="productPrice"
+          type="number"
+          placeholder="Enter Product Price"
+        />
+
+        <button type="submit">Add product</button>
+
+        <p id="productFormStatus"></p>
+      </form>
+    </section>
+    <script src="./product.js"></script>
+  </body>
+</html>
